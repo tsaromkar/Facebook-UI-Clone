@@ -1,0 +1,299 @@
+main {
+  min-height: 100%;
+  background-color: #f0f2f6;
+  padding: 80px 44px 25px 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  max-width: 1000px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 192px;
+  align-self: center;
+}
+
+.recent-logins-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-logins-div {
+  padding-left: 0px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.recent-logins-text {
+  font-size: 26px;
+  margin-bottom: 4px;
+  align-self: center;
+}
+
+.suggestion-text {
+  font-size: 14px;
+  color: rgb(88, 86, 86);
+  margin-bottom: 28px;
+  align-self: center;
+}
+
+.recent-logins-accounts {
+  display: flex;
+  flex-direction: row;
+}
+
+.account-info,
+.add-account {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid rgb(224, 221, 221);
+  border-radius: 10px;
+  transition: box-shadow 0.15s;
+  cursor: pointer;
+  position: relative;
+}
+
+.account-info:hover,
+.add-account:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.15);
+}
+
+.cancel-container {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.cancel {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  top: -2px;
+  left: -2px;
+}
+
+.account-profile-image {
+  width: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.add-account div:nth-child(2),
+.account-info div {
+  text-align: center;
+  padding: 13px 0;
+  font-size: 17px;
+  color: rgb(73, 72, 72);
+}
+
+.add-account div:nth-child(2) {
+  color: #1b77f2;
+}
+
+.account-info {
+  margin-right: 16px;
+}
+
+.add-account div:nth-child(1) {
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  background-color: #f4f6f8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.add-account-image {
+  width: 44px;
+  border-radius: 22px;
+  position: relative;
+  top: 37%;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.15);
+}
+
+.login-section {
+  width: 396px;
+  margin-top: 54px;
+  align-self: center;
+}
+
+.login-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 16px 16px 25px; 
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.email-input,
+.password-input-container,
+.password-input  {
+  align-self: stretch;
+  padding: 17px;
+  border: 1.1px solid rgb(224, 221, 221);
+  border-radius: 6px;
+  box-shadow: inset 0 0 1px rgba(0,0,0,0.15);
+  color: rgb(52, 51, 51);
+  font-size: 17px;
+  display: flex;
+  flex-direction: row;
+}
+
+.password-input-container {
+  padding: 0px;
+  position: relative;
+}
+
+.password-input {
+  width: 100%;
+  border-width: 0;
+}
+
+.hide-password-container {
+  position: absolute;
+  top: 25%;
+  right: 5px;
+  width: 24px;
+  height: 24px;
+  border-radius: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.hide-password-container:hover {
+  background-color: rgb(243, 243, 243);
+} 
+
+.hide-password {
+  width: 12px;
+}
+
+.email-input {
+  margin-bottom: 12px;
+}
+
+.password-input {
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.email-input::placeholder,
+.password-input::placeholder {
+  font-weight: 400;
+  letter-spacing: 0px;
+  font-size: 17px; 
+  color: rgb(167, 162, 162);
+}
+
+.login-button {
+  align-self: stretch;
+  padding: 12px 0;
+  background-color: #1b77f2;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.login-button:hover {
+  background-color: #196cd9;
+}
+
+.forgotten-password {
+  color: #1b77f2;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: text-decoration 0.15s;
+}
+
+hr {
+  width: 100%;
+  border: 0.5px solid rgb(217, 213, 213);
+  margin-bottom: 24px;
+}
+
+.create-new-account-button {
+  padding: 14px 16px;
+  background-color: #42b729;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.create-new-account-button:hover {
+  background-color: #40a12a;
+}
+
+.create-page {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: rgb(38, 37, 37);
+}
+
+.create-page span {
+  font-weight: 700;
+  transition: text-decoration 0.15s;
+}
+
+.forgotten-password:hover,
+.create-page span:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo {
+    align-self: flex-start;
+  }
+  
+  .recent-logins-div {
+    padding-left: 22px;
+    align-self: flex-start;
+  }
+  
+  .recent-logins-text {
+    align-self: flex-start;
+  }
+  
+  .suggestion-text {
+    align-self: flex-start;
+  }
+  .login-section {
+    align-self: flex-start;
+  }
+}
