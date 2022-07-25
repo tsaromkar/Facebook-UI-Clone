@@ -7,7 +7,9 @@ footer {
   padding: 28px;
   max-width: 1000px;
 }
-.footer-content button {
+.select-language button:not(:last-child),
+.facebook-links button,
+.meta-copyright button {
   background: none;
   border: none;
   padding-left: 4px;
@@ -16,6 +18,16 @@ footer {
   font-size: 12px;
   align-items: center;
   letter-spacing: 0.5px;
+}
+.select-language button:last-child {
+  padding: 1px 10px;
+  background-color: #f4f6f8;
+  border: 1px solid rgb(216, 211, 211);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.select-language button:last-child:hover {
+  background-color: #ebedef;
 }
 .footer-content hr {
   margin: 4px;
@@ -26,10 +38,13 @@ footer {
 .meta-copyright {
   margin-top: 20px;
 }
-.footer-content button span {
+.footer-content button {
   cursor: pointer;
 }
-.footer-content button span:hover {
+.select-language button:first-child {
+  cursor: text;
+}
+.select-language button:not(:first-child) span:hover,
+.facebook-links button span:hover {
   text-decoration: underline;
 }
-
